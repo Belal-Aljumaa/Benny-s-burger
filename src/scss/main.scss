@@ -1,0 +1,70 @@
+// Import custom fonts
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
+
+// Text
+$body-color: #444;
+$enable-responsive-font-sizes: true;
+
+$theme-colors: (
+  "primary": #7a44ff
+);
+
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 17,
+);
+
+$display-font-sizes: (
+  1: 9rem,
+  2: 5rem,
+  3: 5.5rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem
+);
+
+// Headings
+$headings-font-family: "Love Ya Like A Sister", cursive;
+
+// This is where you can import other stylesheets or write your scss code
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+body { 
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar .navbar-toggler:focus { 
+  box-shadow: none;
+}
+
+.banner { 
+  background-color: #000;
+  background-image: url(images/lidye-1Shk_PkNkNw-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.scrollable-container {
+  overflow: hidden;
+  overflow-x: scroll;
+}
